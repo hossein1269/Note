@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icon_app_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoteMaani"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.AboutMeActivity"
+            android:label="درباره من"
+            android:parentActivityName=".Activities.NotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ChangePasswordActivity"
+            android:exported="false"
+            android:label="تغییر رمز"
+            android:parentActivityName=".Activities.NotesActivity" />
+        <activity
+            android:name=".Activities.ViewNoteActivity"
+            android:exported="false"
+            android:parentActivityName=".Activities.NotesActivity" />
+        <activity
+            android:name=".Activities.EditNoteActivity"
+            android:exported="false"
+            android:label="ویرایش یادداشت"
+            android:parentActivityName=".Activities.NotesActivity" />
+        <activity
+            android:name=".Activities.AddNoteActivity"
+            android:exported="false"
+            android:label="اضافه کردن یادداشت"
+            android:parentActivityName=".Activities.NotesActivity" />
+        <activity
+            android:name=".Activities.NotesActivity"
+            android:exported="false"
+            android:label="@string/app_title" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="false"
+            android:label="ورود"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

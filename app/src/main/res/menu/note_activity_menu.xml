@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/MenuAddNote" android:title="اضافه کردن یاداشت"/>
+    <item android:id="@+id/MenuRefresh" android:title="تازه سازی"/>
+    <item android:id="@+id/MenuPassword" android:title="تغییر رمز"/>
+    <item android:id="@+id/MenuAbout" android:title="درباره ما"/>
+</menu>

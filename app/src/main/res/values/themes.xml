@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NoteMaani" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="background">@color/primary_dark</item>
+        <item name="android:direction">right_to_left</item>
+    </style>
+    <style name="ImageCirc">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

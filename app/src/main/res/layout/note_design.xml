@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#2C3639"
+    android:layoutDirection="rtl"
+    android:padding="10dp">
+    <LinearLayout
+        android:id="@+id/TitleBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/post"/>
+        <TextView
+            android:id="@+id/noteId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""/>
+        <TextView
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/iran_bold"
+            android:id="@+id/lblTitle"
+            android:text="ياداشت اول"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:maxWidth="3000dp"/>
+    </LinearLayout>
+    <TextView
+        android:layoutDirection="ltr"
+        android:textColor="@color/white"
+        android:fontFamily="@font/iran_reg"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/lblLastChange"
+        android:text="2023/07/25"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"/>
+        <TextView
+            android:id="@+id/summry"
+            android:layout_marginTop="2dp"
+            android:textColor="#E5E5CB"
+            android:layout_below="@id/TitleBar"
+            android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد."
+            android:layout_width="wrap_content"
+            android:maxWidth="250dp"
+            android:maxLines="2"
+            android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/deleteBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="fitCenter"
+        android:background="#2C3639"
+        android:adjustViewBounds="true"
+        android:src="@drawable/delete"
+        />
+
+    <ImageButton
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/deleteBtn"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/EditBtn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:adjustViewBounds="true"
+        android:background="#2C3639"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pencil" />
+
+</RelativeLayout>
